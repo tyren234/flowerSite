@@ -1,0 +1,15 @@
+.navBar {
+    background-color: black;
+    width: 10vw;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navContainer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
