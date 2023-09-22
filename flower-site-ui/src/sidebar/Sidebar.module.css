@@ -1,0 +1,15 @@
+.aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30vh;
+    padding: 10px;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: 0.15s ease transform;
+}
+
+.aside.visible {
+    transform: translateX(0);
+}
