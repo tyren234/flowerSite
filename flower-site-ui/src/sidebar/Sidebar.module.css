@@ -4,8 +4,12 @@
     top: 0;
     bottom: 0;
     width: 30vh;
-    padding: 10px;
-    background-color: white;
+
+    padding: 2rem;
+    background-color: #17171A;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+
     transform: translateX(-100%);
     transition: 0.15s ease transform;
 }
