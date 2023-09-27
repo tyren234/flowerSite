@@ -1,0 +1,39 @@
+.fastTyperPage {
+    position: relative;
+    background-color: #282c34;
+    height: 100vh;
+    width: 100vw;
+    color: azure;
+    padding-top: 5vh;
+}
+
+.mainInputArea {
+    position: relative;
+    margin-left: 35%;
+    margin-top: 5vh;
+    width: 30%;
+    height: 75%;
+    background-color: #202124;
+}
+
+.mainInput {
+    height: 2rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    color: azure;
+    font-size: larger;
+    text-align: center;
+
+    caret-color: transparent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+
+.currentWordHeader {
+    text-align: center;
+}

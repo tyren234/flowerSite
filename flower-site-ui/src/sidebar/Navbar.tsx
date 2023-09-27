@@ -14,9 +14,8 @@ function Navbar(props: NavbarProps) {
 
     return (
         <nav className={styles.navBar}>
-            <div className={styles.navContainer}>
-                <Button onClick={openSidebar} className={"sidebar-toggle"} variant={"outlined"} color={"primary"} size={"small"}>MENU</Button>
-            </div>
+            <Button onClick={openSidebar} className={"sidebar-toggle"} variant={"outlined"} color={"primary"}
+                    size={"small"}>MENU</Button>
         </nav>
     );
 }
