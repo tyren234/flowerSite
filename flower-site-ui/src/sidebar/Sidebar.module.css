@@ -3,12 +3,12 @@
     left: 0;
     top: 0;
     bottom: 0;
-    width: 30vh;
+    width: 25vh;
 
     padding: 2rem;
     background-color: #17171A;
-    border-bottom-right-radius: 100px;
-    border-top-right-radius: 100px;
+    border-bottom-right-radius: 10vh;
+    border-top-right-radius: 10vh;
 
     transform: translateX(-100%);
     transition: 0.15s ease transform;

@@ -1,4 +1,13 @@
 .sidebarElement {
+    display: flex;
     color: azure;
-    align-content: center;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+}
+
+.sidebarLabel{
+    margin-left: 1rem;
+    color: azure;
+    text-decoration: none;
 }

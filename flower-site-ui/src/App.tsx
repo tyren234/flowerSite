@@ -2,6 +2,12 @@ import React, {useState, useRef, useEffect} from 'react';
 import ImageTrackPage from "./pages/ImageTrackPage/ImageTrackPage";
 import Navbar from "./sidebar/Navbar";
 import Sidebar2 from "./sidebar/Sidebar";
+import {
+    Route,
+    Routes
+} from "react-router-dom";
+import FastTyperPage from "./pages/FastTyperPage/FastTyperPage";
+import NoPage from "./pages/NoPage/NoPage";
 
 function App() {
     const [sidebarToggled, setSidebarToggled] = useState<boolean>(false);
@@ -26,7 +32,12 @@ function App() {
 
     return (
         <div>
-            <ImageTrackPage/>
+            <Routes>
+                <Route path="/images" element={<ImageTrackPage />} />
+                <Route path="/typer" element={<FastTyperPage />} />
+                <Route path="/404" element={<NoPage />} />
+                <Route path="/" element={<ImageTrackPage />} />
+            </Routes>
             <div ref={sidebarRef}>
                 <Navbar setSidebarToggled={setSidebarToggled}/>
                 <Sidebar2
@@ -34,7 +45,8 @@ function App() {
                 />
             </div>
         </div>
-    );
+    )
+        ;
 }
 
 export default App;

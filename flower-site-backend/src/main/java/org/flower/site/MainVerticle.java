@@ -11,7 +11,8 @@ public final class MainVerticle extends AbstractVerticle {
         HttpServer server = vertx.createHttpServer();
         Router router = new RouterImpl(vertx);
         router.route()
-                .handler(MyStaticHandler.create("D:\\gits\\flowerSite\\flower-site-ui\\build"));
+//                .handler(MyStaticHandler.create("D:\\gits\\flowerSite\\flower-site-ui\\build"));
+                .handler(MyStaticHandler.create("/home/tymon/Documents/gits/flowerSite/flower-site-ui/build"));
 
         final int listenPort = 8080;
         server.requestHandler(router)
