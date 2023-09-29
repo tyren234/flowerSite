@@ -9,9 +9,10 @@
 
 .mainInputArea {
     position: relative;
-    margin-left: 35%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5vh;
-    width: 30%;
+    width: 40rem;
     height: 75%;
     background-color: #202124;
 }

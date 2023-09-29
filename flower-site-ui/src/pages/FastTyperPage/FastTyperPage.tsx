@@ -8,21 +8,25 @@ function FastTyperPage() {
     const [message, setMessage] = useState<string>("");
     const [currentLetter, setCurrentLetter] = useState<number>(0);
     const [currentWordIndex, setCurrentWordIndex] = useState<number>(getRandomInt(0, words.length));
-    const defaultPositionPercent = 5;
-    const maxPositionPercent = 90;
-    const [positionPercent, setPositionPercent] = useState<number>(defaultPositionPercent);
+    const defaultTopPercent = 5;
+    const maxTopPercent = 90;
+    const addTopPercent = 1;
+    const intervalMS = 1000;
+    const minLeftPercent = 1;
+    const inputWidthRem = 40;
+    const [maxLeftPercent, setMaxLeftPercent] = useState<number>(inputWidthRem - words[currentWordIndex].length);
+    const [addLeftPercent, setAddLeftPercent] = useState<number>(1);
+    const [topPercent, setTopPercent] = useState<number>(defaultTopPercent);
+    const [leftPercent, setLeftPercent] = useState<number>(getRandomInt(minLeftPercent, maxLeftPercent));
     const [gameOver, setGameOver] = useState<boolean>(false);
+    const [round, setRound] = useState<number>(0);
 
     const textAreaRef = useRef<HTMLTextAreaElement>(null);
 
     const onChange = (event: any) => {
-        if (event.target.value[currentLetter] == words[currentWordIndex][currentLetter]) {
-            if (event.target.value.length == words[currentWordIndex].length) {
-                const newWordIndex = getRandomInt(0, words.length);
-                setMessage("");
-                setCurrentLetter(0);
-                setCurrentWordIndex(newWordIndex);
-                setPositionPercent(defaultPositionPercent);
+        if (event.target.value[currentLetter] === words[currentWordIndex][currentLetter]) {
+            if (event.target.value.length === words[currentWordIndex].length) {
+                updateWord();
                 return;
             }
             setMessage(event.target.value);
@@ -34,16 +38,42 @@ function FastTyperPage() {
         return;
     };
 
+    const getInterval = () => {
+        return intervalMS - (round * 10);
+    }
+
+    const updateWord = () => {
+        const newWordIndex = getRandomInt(0, words.length);
+        setMessage("");
+        setCurrentLetter(0);
+        setCurrentWordIndex(newWordIndex);
+        setTopPercent(defaultTopPercent);
+        setMaxLeftPercent(inputWidthRem - words[currentWordIndex].length)
+        setLeftPercent(getRandomInt(minLeftPercent, maxLeftPercent));
+        setRound(round + 1);
+        return;
+    }
+
     const focusInput = () => {
         if (textAreaRef.current) {
             textAreaRef.current.focus();
         }
     }
 
+    const getNewLeftPercent = () => {
+        if (( leftPercent >= maxLeftPercent && addLeftPercent > 0 ) || (leftPercent <= minLeftPercent && addLeftPercent < 0)){
+            setAddLeftPercent(-addLeftPercent);
+        }
+        return (leftPercent + addLeftPercent);
+    }
+
     useEffect(() => {
-        const interval = setInterval(() => setPositionPercent(positionPercent + 10), 1000);
-        console.log(interval, " ", positionPercent, " ", gameOver);
-        if (positionPercent >= maxPositionPercent) {
+        const interval = setInterval(() => {
+            setTopPercent(topPercent + addTopPercent);
+            setLeftPercent(getNewLeftPercent());
+        }, getInterval());
+
+        if (topPercent >= maxTopPercent) {
             clearInterval(interval);
             setGameOver(true);
             return;
@@ -51,14 +81,15 @@ function FastTyperPage() {
         return () => {
             clearInterval(interval);
         };
-    }, [positionPercent])
+    }, [topPercent, leftPercent])
 
     if (gameOver) {
         return (
             <div className={style.fastTyperPage}>
                 <div className={style.currentWordHeader}>
-                    <h1>You loose on</h1>
-                    <h2>{words[currentWordIndex]}</h2>
+                    <h1>You loose on {words[currentWordIndex]}</h1>
+                    <h2>Round: {round}</h2>
+                    <h3>Interval: {getInterval()/1000}s</h3>
                 </div>
             </div>
         )
@@ -67,9 +98,10 @@ function FastTyperPage() {
         <div className={style.fastTyperPage}>
             <div className={style.currentWordHeader}>
                 <h1>{words[currentWordIndex]}</h1>
+                <h3>Round: {round} Interval: {getInterval()/1000}s</h3>
             </div>
             <div className={style.mainInputArea} onClick={focusInput}>
-                <div style={{top: `${positionPercent}%`, left: "50%", position: "absolute"}}>
+                <div style={{top: `${topPercent}%`, left: `${leftPercent}rem`, position: "absolute"}}>
                     {words[currentWordIndex]}
                 </div>
                     <textarea
