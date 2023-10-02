@@ -48,7 +48,7 @@ function ImageTrackPage() {
     }
 
     return (
-        <div id={"imageTrackPage"}>
+        <div>
             <div id={"image-track"}>
                 <img className={"image"} src={require("../../images/photo-1.jpg")} draggable={false} />
                 <img className={"image"} src={require("../../images/photo-2.jpg")} draggable={false} />
