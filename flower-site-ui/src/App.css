@@ -1,5 +1,12 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: azure;
+  caret-color: transparent;
+}
+
+.Page {
+  padding: 5vh 5vw;
 }
 
 .App-logo {

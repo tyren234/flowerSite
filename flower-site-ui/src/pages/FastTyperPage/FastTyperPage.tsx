@@ -10,9 +10,9 @@ function FastTyperPage() {
     const [currentWordIndex, setCurrentWordIndex] = useState<number>(getRandomInt(0, words.length));
     const defaultTopPercent = 5;
     const maxTopPercent = 90;
-    const addTopPercent = 1;
+    const addTopPercent = 5;
     const intervalMS = 1000;
-    const minLeftPercent = 1;
+    const minLeftPercent = 2;
     const inputWidthRem = 40;
     const [maxLeftPercent, setMaxLeftPercent] = useState<number>(inputWidthRem - words[currentWordIndex].length);
     const [addLeftPercent, setAddLeftPercent] = useState<number>(1);
