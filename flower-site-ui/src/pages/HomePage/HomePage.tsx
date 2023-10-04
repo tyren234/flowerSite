@@ -1,20 +1,21 @@
 import "./HomePage.css";
+import React from "react";
+import {Link} from "react-router-dom";
 
 function HomePage() {
 
     return (
         <div className={"homePage"}>
             <div id="cards">
-                <div className="card">
+                <div className="card left">
                     <div className="card-content">
                         <section>
                             <p>Hi! I'm Tymon, a.k.a.</p>
                             <strong>🌺 Flower 🌺</strong>
-                            <p>and here is a little more about me:</p>
                         </section>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card right">
                     <div className="card-content">
                         <section>
                             <p>
@@ -23,10 +24,38 @@ function HomePage() {
                                 focusing on programming in C++ and Python. It was also then that I finally decided to
                                 install Ubuntu on my main PC (I use dual boot).
                             </p>
+                        </section>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-content">
+                        <section>
                             <p>
                                 Now I study Computer Science (Geoinformatics) at Warsaw University of Technology, give
                                 tutoring in high school mathematics and look for a junior developer position.
                             </p>
+                            <p>
+                                I hope you'll find this site entertaining and worth your time :). (I really recommend<Link to={"/memes"}>memes</Link> tab)
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-content">
+                        <section>
+                            <p>
+                                Topics I once was, or currently am interested in:
+                            </p>
+                            <ul>
+                                <li>Java and Design Patterns </li>
+                                <li>C++ (I started here, it was my primary language at the university. I took part in Nokia Academy for C++ developers in autumn 2022)</li>
+                                <li>Python (<a href="https://github.com/tyren234/pythongit/tree/main/blind75">Blind75 (on LeetCode)</a>, Selenium, Pandas, Numpy, Tensorflow)</li>
+                                <li>HTML, CSS i JS (<a href="index.html" target="_blank">my site</a> and some extensions)</li>
+                                <li>C# (Unity games)</li>
+                                <li>Cybersecurity (<a href="https://tryhackme.com/p/tyren234" target="_blank">trychackme.com</a>) </li>
+                                <li>Bash and Linux (when I had to install Ubuntu and write my scripts for it)</li>
+                            </ul>
+
                         </section>
                     </div>
                 </div>
@@ -40,21 +69,11 @@ function HomePage() {
                         AAAAAAAAAAAAAAAAAAAA
                     </div>
                 </div>
-                <div className="card">
-                    <div className="card-content">
-                        AAAAAAAAAAAAAAAAAAAA
+                    <div className="card">
+                        <div className="card-content">
+                            AAAAAAAAAAAAAAAAAAAA
+                        </div>
                     </div>
-                </div>
-                <div className="card">
-                    <div className="card-content">
-                        AAAAAAAAAAAAAAAAAAAA
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card-content">
-                        AAAAAAAAAAAAAAAAAAAA
-                    </div>
-                </div>
             </div>
         </div>
     );
