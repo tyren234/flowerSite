@@ -2,6 +2,7 @@ import "./HomePage.css";
 import React from "react";
 import {Link} from "react-router-dom";
 import styles from "../../styles/links.module.css";
+import IntroductionHeader from "./IntroductionHeader";
 
 function HomePage() {
 
@@ -12,7 +13,7 @@ function HomePage() {
                     <div className="card-content">
                         <section>
                             <p>Hi! I'm Tymon, a.k.a.</p>
-                            <strong>🌺 Flower 🌺</strong>
+                            <IntroductionHeader texts={["🌺 Flower 🌺", "Kwiatek", "Tymon", "DM"]} />
                             <p>Be sure to visit
                                 <Link className={styles.underlineLink} to={"/boardGames"}> board games</Link>,
                                 <Link className={styles.underlineLink} to={"/images"}> images</Link> or
