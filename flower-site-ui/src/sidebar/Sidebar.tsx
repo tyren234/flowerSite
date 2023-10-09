@@ -55,9 +55,6 @@ function Sidebar(props: SidebarProps) {
                         </ListItem>
                     </Link>
                 </List>
-                {/*<SidebarElement label={"Home"} icon={solid("home")} link={"./"}/>*/}
-                {/*<SidebarElement label={"Image gallery"} icon={solid("image")} link={"./images"}/>*/}
-                {/*<SidebarElement label={"Fast typer"} icon={solid("keyboard")} link={"./typer"}/>*/}
             </aside>
         </div>
     )
