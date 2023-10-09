@@ -1,6 +1,7 @@
 :root {
     --card-color: rgb(25, 25, 25);
-    --main-background-color: #282c34
+    --main-background-color: #282c34;
+    --main-text-color: azure;
 }
 
 body {

@@ -15,7 +15,7 @@ function HomePage() {
                         </section>
                     </div>
                 </div>
-                <div className="card right">
+                <div className="card">
                     <div className="card-content">
                         <section>
                             <p>
@@ -27,7 +27,7 @@ function HomePage() {
                         </section>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card right">
                     <div className="card-content">
                         <section>
                             <p>
@@ -35,7 +35,8 @@ function HomePage() {
                                 tutoring in high school mathematics and look for a junior developer position.
                             </p>
                             <p>
-                                I hope you'll find this site entertaining and worth your time :). (I really recommend<Link to={"/memes"}>memes</Link> tab)
+                                I hope you'll find this site entertaining and worth your time :). (I really
+                                recommend<Link to={"/memes"}>memes</Link> tab)
                             </p>
                         </section>
                     </div>
@@ -44,22 +45,29 @@ function HomePage() {
                     <div className="card-content">
                         <section>
                             <p>
-                                Topics I once was, or currently am interested in:
+                                My interests:
                             </p>
-                            <ul>
-                                <li>Java and Design Patterns </li>
-                                <li>C++ (I started here, it was my primary language at the university. I took part in Nokia Academy for C++ developers in autumn 2022)</li>
-                                <li>Python (<a href="https://github.com/tyren234/pythongit/tree/main/blind75">Blind75 (on LeetCode)</a>, Selenium, Pandas, Numpy, Tensorflow)</li>
-                                <li>HTML, CSS i JS (<a href="index.html" target="_blank">my site</a> and some extensions)</li>
+                            <ul style={{textAlign: "left", lineHeight: "1.5rem"}}>
+                                <li>Java and Design Patterns (I developed in Java while working in Goldman Sachs)</li>
+                                <li>C++ (I started here, it was my primary language at the university. I took part in
+                                    Nokia Academy for C++ developers in autumn 2022)
+                                </li>
+                                <li>Python (<a href="https://github.com/tyren234/pythongit/tree/main/blind75">Blind75
+                                    (on LeetCode)</a>, Selenium, Pandas, Numpy, Tensorflow)
+                                </li>
+                                <li>Typescript, Material UI, HTML, CSS, JS (my site and some extensions)
+                                </li>
                                 <li>C# (Unity games)</li>
-                                <li>Cybersecurity (<a href="https://tryhackme.com/p/tyren234" target="_blank">trychackme.com</a>) </li>
+                                <li>Cybersecurity (<a href="https://tryhackme.com/p/tyren234"
+                                                      target="_blank">trychackme.com</a>)
+                                </li>
                                 <li>Bash and Linux (when I had to install Ubuntu and write my scripts for it)</li>
                             </ul>
 
                         </section>
                     </div>
                 </div>
-                <div className="card">
+                <div className="card left">
                     <div className="card-content">
                         AAAAAAAAAAAAAAAAAAAA
                     </div>
@@ -69,11 +77,11 @@ function HomePage() {
                         AAAAAAAAAAAAAAAAAAAA
                     </div>
                 </div>
-                    <div className="card">
-                        <div className="card-content">
-                            AAAAAAAAAAAAAAAAAAAA
-                        </div>
+                <div className="card right">
+                    <div className="card-content">
+                        AAAAAAAAAAAAAAAAAAAA
                     </div>
+                </div>
             </div>
         </div>
     );

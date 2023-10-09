@@ -4,6 +4,7 @@
     top: 0;
     bottom: 0;
     width: 25vh;
+    z-index: 100;
 
     padding: 2rem;
     background-color: #17171A;
@@ -16,4 +17,13 @@
 
 .aside.visible {
     transform: translateX(0);
+}
+
+.icon {
+    color: var(--main-text-color);
+}
+
+.link {
+    color: var(--main-text-color);
+    text-decoration: none;
 }
