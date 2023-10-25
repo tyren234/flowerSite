@@ -13,7 +13,7 @@ function HomePage() {
                     <div className="card-content">
                         <section>
                             <p>Hi! I'm Tymon, a.k.a.</p>
-                            <IntroductionHeader texts={["🌺 Flower 🌺", "Kwiatek", "Tymon", "DM"]} />
+                            <p><IntroductionHeader texts={["🌺 Flower 🌺", "Kwiatek", "Tymon", "GM", "tyren234", "Cwjetok"]} nameChangeInterval={5000} /></p>
                             <p>Be sure to visit
                                 <Link className={styles.underlineLink} to={"/boardGames"}> board games</Link>,
                                 <Link className={styles.underlineLink} to={"/images"}> images</Link> or

@@ -1,13 +1,13 @@
 import {useEffect, useState} from "react";
-
+import "./IntroductionHeader.css"
 export interface IntroductionHeaderProps {
     texts: string[];
+    nameChangeInterval: number;
 }
 
 function IntroductionHeader(props: IntroductionHeaderProps) {
-    const {texts} = props;
+    const {texts, nameChangeInterval} = props;
     const [nameIndex, setNameIndex] = useState<number>(0)
-    const nameChangeInterval = 2000;
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -21,8 +21,8 @@ function IntroductionHeader(props: IntroductionHeaderProps) {
     }, [nameIndex])
 
     return (
-        <div>
-            {texts[nameIndex]}
+        <div className={"typewriter"}>
+            <h1>"{texts[nameIndex]}"</h1>
         </div>
     )
 }
