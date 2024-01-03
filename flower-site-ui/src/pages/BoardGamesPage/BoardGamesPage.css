@@ -1,21 +1,26 @@
 .boardGamesPage {
-    margin: 0;
-    padding: 0;
     font-size: 18px;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .boardGamesCards {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    margin: 5vh auto;
 }
 
 .boardGamesCard {
-    background: var(--card-color);
-    padding: 3rem 5rem;
-    border: solid red 1px;
+    min-width: 25rem;
+    max-width: 65rem;
+    padding: 1rem 1rem;
+    /*border: solid red 1px;*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
 }
 
 .boardGamesCard p {
@@ -23,5 +28,8 @@
     line-height: 150%;
 }
 
-
+.boardGamesCardImage {
+    border-radius: inherit;
+    background: var(--transparent-card-color);
+}
 

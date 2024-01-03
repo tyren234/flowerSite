@@ -89,7 +89,8 @@ function HomePage() {
                                     <li>Play computer games 🎮</li>
                                     <li>Play piano 🎹 and guitar ️🎸</li>
                                     <li>Read and record reading poetry 📖 (<Link className={styles.underlineLink}
-                                                                                to={"https://youtube.com/@osluchany"}>my
+                                                                                to={"https://youtube.com/@osluchany"}
+                                                                                target="_blank">my
                                         yt channel</Link>)
                                     </li>
                                 </ul>
