@@ -1,0 +1,27 @@
+.boardGamesPage {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.boardGamesCards {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.boardGamesCard {
+    background: var(--card-color);
+    padding: 3rem 5rem;
+    border: solid red 1px;
+}
+
+.boardGamesCard p {
+    padding-top: 1rem;
+    line-height: 150%;
+}
+
+
+

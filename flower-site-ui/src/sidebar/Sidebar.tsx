@@ -8,6 +8,8 @@ import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 import ImageIcon from '@mui/icons-material/Image';
 import KeyboardIcon from '@mui/icons-material/Keyboard';
+import CasinoIcon from '@mui/icons-material/Casino';
+import ArtTrackIcon from '@mui/icons-material/ArtTrack';
 import {Link} from "react-router-dom";
 
 export interface SidebarProps {
@@ -28,7 +30,29 @@ function Sidebar(props: SidebarProps) {
                                 <ListItemIcon>
                                     <HomeIcon className={styles.icon}/>
                                 </ListItemIcon>
-                                <ListItemText primary="Home" color={"warining"}/>
+                                <ListItemText primary="Home"/>
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
+
+                    <Link to={"/boardGames"} className={styles.link}>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <CasinoIcon className={styles.icon}/>
+                                </ListItemIcon>
+                                <ListItemText primary="Board Games"/>
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
+
+                    <Link to={"/memes"} className={styles.link}>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                                <ListItemIcon>
+                                    <ArtTrackIcon className={styles.icon}/>
+                                </ListItemIcon>
+                                <ListItemText primary="Memes"/>
                             </ListItemButton>
                         </ListItem>
                     </Link>

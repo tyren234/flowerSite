@@ -7,6 +7,7 @@ import {Route, Routes} from "react-router-dom";
 import FastTyperPage from "./pages/FastTyperPage/FastTyperPage";
 import NoPage from "./pages/NoPage/NoPage";
 import HomePage from "./pages/HomePage/HomePage";
+import BoardGamesPage from "./pages/BoardGamesPage/BoardGamesPage";
 
 function App() {
     const [sidebarToggled, setSidebarToggled] = useState<boolean>(false);
@@ -34,6 +35,7 @@ function App() {
             <div className={"Page"}>
                 <Routes>
                     <Route path="/images" element={<ImageTrackPage/>}/>
+                    <Route path="/boardGames" element={<BoardGamesPage/>}/>
                     <Route path="/typer" element={<FastTyperPage/>}/>
                     <Route path="/404" element={<NoPage/>}/>
                     <Route path="/" element={<HomePage/>}/>
