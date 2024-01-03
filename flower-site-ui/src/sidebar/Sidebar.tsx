@@ -22,7 +22,7 @@ function Sidebar(props: SidebarProps) {
                   href={"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"}/>
             <aside className={`sidebar ${sidebarToggled ? styles.aside + " " + styles.visible : styles.aside}`}>
                 <List>
-                    <Link to={"/home"} className={styles.link}>
+                    <Link to={"/"} className={styles.link}>
                         <ListItem disablePadding>
                             <ListItemButton>
                                 <ListItemIcon>

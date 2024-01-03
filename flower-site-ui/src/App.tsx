@@ -36,7 +36,7 @@ function App() {
                     <Route path="/images" element={<ImageTrackPage/>}/>
                     <Route path="/typer" element={<FastTyperPage/>}/>
                     <Route path="/404" element={<NoPage/>}/>
-                    <Route path="/home" element={<HomePage/>}/>
+                    <Route path="/" element={<HomePage/>}/>
                 </Routes>
             </div>
             <div ref={sidebarRef}>
