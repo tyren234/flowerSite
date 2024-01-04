@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from "./App";
-import {BrowserRouter} from "react-router-dom";
 import {createTheme, ThemeProvider} from "@mui/material";
+import {HashRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -19,9 +19,9 @@ const darkTheme = createTheme({
 root.render(
     <ThemeProvider theme={darkTheme}>
         {/*<CssBaseline />*/}
-        <BrowserRouter basename={"/flowerSite"}>
+        <HashRouter basename={"/flowerSite"}>
             <App/>
-        </BrowserRouter>
+        </HashRouter>
     </ThemeProvider>
 );
 
