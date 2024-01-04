@@ -7,6 +7,7 @@
 
 .boardGamesCards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 5vh auto;
@@ -16,6 +17,7 @@
     min-width: 25rem;
     max-width: 65rem;
     padding: 1rem 1rem;
+    margin: 1rem 1rem;
     /*border: solid red 1px;*/
     background-position: center;
     background-size: cover;
@@ -33,3 +35,7 @@
     background: var(--transparent-card-color);
 }
 
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
