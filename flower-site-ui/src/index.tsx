@@ -19,7 +19,7 @@ const darkTheme = createTheme({
 root.render(
     <ThemeProvider theme={darkTheme}>
         {/*<CssBaseline />*/}
-        <HashRouter basename={"/flowerSite"}>
+        <HashRouter>
             <App/>
         </HashRouter>
     </ThemeProvider>

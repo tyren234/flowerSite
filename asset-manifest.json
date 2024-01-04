@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.02c8d9c4.css",
-    "main.js": "./static/js/main.51127fe8.js",
+    "main.js": "./static/js/main.7c135fc5.js",
     "static/js/787.164b5c59.chunk.js": "./static/js/787.164b5c59.chunk.js",
     "static/media/jakub-rozalski-harvest-advantage-new-small.jpeg": "./static/media/jakub-rozalski-harvest-advantage-new-small.6fcaa344ebc59498430b.jpeg",
     "static/media/photo-1.jpg": "./static/media/photo-1.3234b50bfceb8ab60ecd.jpg",
@@ -25,11 +25,11 @@
     "static/media/munchkin_game_cover.jpg": "./static/media/munchkin_game_cover.08f211a64caea0276a4e.jpg",
     "index.html": "./index.html",
     "main.02c8d9c4.css.map": "./static/css/main.02c8d9c4.css.map",
-    "main.51127fe8.js.map": "./static/js/main.51127fe8.js.map",
+    "main.7c135fc5.js.map": "./static/js/main.7c135fc5.js.map",
     "787.164b5c59.chunk.js.map": "./static/js/787.164b5c59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02c8d9c4.css",
-    "static/js/main.51127fe8.js"
+    "static/js/main.7c135fc5.js"
   ]
 }
