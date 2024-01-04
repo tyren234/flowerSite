@@ -3,6 +3,7 @@
     --transparent-card-color: rgba(25, 25, 25, 0.9ó);
     --main-background-color: #282c34;
     --main-text-color: azure;
+    --main-text-hover-color: #c4d0d0;
 }
 
 body {

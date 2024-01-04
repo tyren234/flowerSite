@@ -15,7 +15,7 @@
 
 .boardGamesCard {
     min-width: 25rem;
-    max-width: 65rem;
+    max-width: 60rem;
     padding: 1rem 1rem;
     margin: 1rem 1rem;
     /*border: solid red 1px;*/
@@ -25,14 +25,18 @@
     border-radius: 1rem;
 }
 
+.boardGamesCard:hover {
+    scale: 1.02;
+}
+
 .boardGamesCard p {
     padding-top: 1rem;
     line-height: 150%;
 }
 
 .boardGamesCardImage {
-    border-radius: inherit;
-    background: var(--transparent-card-color);
+    /*border-radius: inherit;*/
+    /*background: var(--transparent-card-color);*/
 }
 
 .break {

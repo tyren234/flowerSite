@@ -22,8 +22,8 @@ const BoardGameCard = (props: BoardGameCardProps) => {
             }}
             onClick={() => setIsOpen(!isOpen)}
         >
-            {/*<div className={"boardGamesCardImage"}>*/}
-            <motion.h2 layout={"position"}>{title}</motion.h2>
+            <motion.h2
+                layout={"position"}>{title}</motion.h2>
             {isOpen && (
                 <motion.div
                     initial={{opacity: 0}}
