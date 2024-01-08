@@ -46,7 +46,7 @@ function BoardGamesPage() {
                                        </ul>
 
                                    </div>)}
-                               imagePath={require("../../images/boardGames/root.jpg")}/>
+                               imagePath={require("../../images/boardGames/root.webp")}/>
 
                 <BoardGameCard title={"King's Dilemma 7/10"}
                                description={(
@@ -79,7 +79,7 @@ function BoardGamesPage() {
                                        </ul>
 
                                    </div>)}
-                               imagePath={require("../../images/boardGames/kings_dilemma.jpg")}/>
+                               imagePath={require("../../images/boardGames/kings_dilemma.webp")}/>
 
                 <div className={"break"}></div>
 
@@ -109,7 +109,7 @@ function BoardGamesPage() {
                                            <li>I lost a piece and now it's incomplete</li>
                                        </ul>
                                    </div>)}
-                               imagePath={require("../../images/boardGames/jakub-rozalski-harvest-advantage-new-small.jpeg")}/>
+                               imagePath={require("../../images/boardGames/jakub-rozalski-harvest-advantage-new-small.webp")}/>
 
                 <BoardGameCard title={"Munchkin 7/10"}
                                description={(
@@ -125,7 +125,7 @@ function BoardGamesPage() {
                                            minutes because a friend has to catch a bus. As for humor, I'll just put a
                                            picture of three random cards from the game and let it speak for itself.</p>
                                        <img className={"boardGamesCardImage"}
-                                            src={require("../../images/boardGames/munchkin_cards.jpg")}
+                                            src={require("../../images/boardGames/munchkin_cards.webp")}
                                             alt={"Three Munchkin playing cards"}
                                             width={"50%"}/>
                                        Pros:
@@ -143,7 +143,7 @@ function BoardGamesPage() {
                                        </ul>
 
                                    </div>)}
-                               imagePath={require("../../images/boardGames/munchkin_game_cover.jpg")}/>
+                               imagePath={require("../../images/boardGames/munchkin_game_cover.webp")}/>
 
                 <div className={"break"}></div>
 
@@ -173,7 +173,7 @@ function BoardGamesPage() {
                                        </ul>
 
                                    </div>)}
-                               imagePath={require("../../images/boardGames/dune_imperium.jpg")}/>
+                               imagePath={require("../../images/boardGames/dune_imperium.webp")}/>
 
                 <BoardGameCard title={"Lord's of Waterdeep 8/10"}
                                description={(
@@ -195,7 +195,7 @@ function BoardGamesPage() {
                                            <li>Dungeons & Dragons universe</li>
                                        </ul>
                                    </div>)}
-                               imagePath={require("../../images/boardGames/lords_of_waterdeep.jpg")}/>
+                               imagePath={require("../../images/boardGames/lords_of_waterdeep.webp")}/>
 
                 <div className={"break"}></div>
 
@@ -208,7 +208,7 @@ function BoardGamesPage() {
                                            never tried expansions for this Game. Personally I really recommend you try
                                            out the game, but don't buy it before you play a couple of times.</p>
                                    </div>)}
-                               imagePath={require("../../images/boardGames/7wonders.jpg")}/>
+                               imagePath={require("../../images/boardGames/7wonders.webp")}/>
                 <BoardGameCard title={"7 Wonders Duel 8/10"}
                                description={(
                                    <div>
@@ -230,7 +230,7 @@ function BoardGamesPage() {
                                            <li>Easy to learn</li>
                                        </ul>
                                    </div>)}
-                               imagePath={require("../../images/boardGames/7wonders_duel.jpg")}/>
+                               imagePath={require("../../images/boardGames/7wonders_duel.webp")}/>
 
                 <div className={"break"}></div>
 
@@ -255,7 +255,7 @@ function BoardGamesPage() {
                                            <li>Repetitive after you've played all 7 wonders</li>
                                        </ul>
                                    </div>)}
-                               imagePath={require("../../images/boardGames/7wonders_architects.jpg")}/>
+                               imagePath={require("../../images/boardGames/7wonders_architects.webp")}/>
 
 
             </div>
