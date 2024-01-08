@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.5c743b2f.css",
-    "main.js": "./static/js/main.a649b623.js",
+    "main.js": "./static/js/main.53b708f6.js",
     "static/js/787.164b5c59.chunk.js": "./static/js/787.164b5c59.chunk.js",
     "static/media/photo-2.webp": "./static/media/photo-2.79a2e6f7a683446c05e1.webp",
     "static/media/jakub-rozalski-harvest-advantage-new-small.webp": "./static/media/jakub-rozalski-harvest-advantage-new-small.5f189ee2cdbc900072ad.webp",
@@ -11,12 +11,12 @@
     "static/media/photo-7.webp": "./static/media/photo-7.06ed935dc7fba790ff74.webp",
     "static/media/photo-8.webp": "./static/media/photo-8.9c428ec2634e095873ba.webp",
     "static/media/root.webp": "./static/media/root.11329466edeeaa3c2ded.webp",
-    "static/media/7wonders.webp": "./static/media/7wonders.0de9d675f6bdcd2a3653.webp",
     "static/media/photo-3.webp": "./static/media/photo-3.5be64d987b5e44f79d1c.webp",
     "static/media/lords_of_waterdeep.webp": "./static/media/lords_of_waterdeep.008fd24223bb38e1f8a4.webp",
     "static/media/photo-10.webp": "./static/media/photo-10.b8748a4847cc2c8bb3c6.webp",
     "static/media/photo-4.webp": "./static/media/photo-4.a06132c4ab9081314d94.webp",
     "static/media/photo-6.webp": "./static/media/photo-6.99536d62d2f0c53c98bb.webp",
+    "static/media/7wonders.webp": "./static/media/7wonders.026e8e663ca9d8d18d9e.webp",
     "static/media/dune_imperium.webp": "./static/media/dune_imperium.93b0794ad6154f05a3ad.webp",
     "static/media/7wonders_duel.webp": "./static/media/7wonders_duel.e25561dd04e3c251cc2e.webp",
     "static/media/kings_dilemma.webp": "./static/media/kings_dilemma.04ea5227533fcf3b7cf1.webp",
@@ -25,11 +25,11 @@
     "static/media/munchkin_cards.webp": "./static/media/munchkin_cards.84a439382cb9f2f2ba76.webp",
     "index.html": "./index.html",
     "main.5c743b2f.css.map": "./static/css/main.5c743b2f.css.map",
-    "main.a649b623.js.map": "./static/js/main.a649b623.js.map",
+    "main.53b708f6.js.map": "./static/js/main.53b708f6.js.map",
     "787.164b5c59.chunk.js.map": "./static/js/787.164b5c59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c743b2f.css",
-    "static/js/main.a649b623.js"
+    "static/js/main.53b708f6.js"
   ]
 }
