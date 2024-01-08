@@ -8,6 +8,7 @@ import FastTyperPage from "./pages/FastTyperPage/FastTyperPage";
 import NoPage from "./pages/NoPage/NoPage";
 import HomePage from "./pages/HomePage/HomePage";
 import BoardGamesPage from "./pages/BoardGamesPage/BoardGamesPage";
+import MemesPage from "./pages/MemesPage/MemesPage";
 
 function App() {
     const [sidebarToggled, setSidebarToggled] = useState<boolean>(false);
@@ -36,6 +37,7 @@ function App() {
                 <Routes>
                     <Route path="/images" element={<ImageTrackPage/>}/>
                     <Route path="/boardGames" element={<BoardGamesPage/>}/>
+                    <Route path="/memes" element={<MemesPage/>}/>
                     <Route path="/typer" element={<FastTyperPage/>}/>
                     <Route path="/404" element={<NoPage/>}/>
                     <Route path="/" element={<HomePage/>}/>

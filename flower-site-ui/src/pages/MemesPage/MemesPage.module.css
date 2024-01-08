@@ -1,0 +1,19 @@
+.memesList {
+    list-style: none;
+}
+
+.ytVideo {
+    border: 2px var(--main-text-color) solid;
+    /* max-width: 300px; */
+    /* width: 100%; */
+    box-shadow: 1px 1px 1rem rgb(0, 0, 0);
+    margin: 1rem;
+}
+
+.memesPage section{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
