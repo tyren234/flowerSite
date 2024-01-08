@@ -402,17 +402,30 @@ function BoardGamesPage() {
                 <BoardGameCard title={"Game of Thrones 10/10"}
                                description={(
                                    <div>
-                                       <p></p>
+                                       <p>Game of Thrones is set in the kingdom of Westeros. Famous franchise does not
+                                           disappoint. As the leader of your house you fight to conquer Westeros and to
+                                           take the Iron Throne together with all seven kingdoms.</p>
+                                       <p>This is a strategic game full of promises and treason - just as the Song of
+                                           Ice and Fire. The game ends when anyone takes control over seven castles or
+                                           after set ammount of rounds. Even thought it seems like the game would be
+                                           quick, it can often take more than 4 hours. Even though you quickly get lost
+                                           in the game, as you plan your next move trying to make friends or plotting
+                                           against your soon-to-be enemies.</p>
+                                       <p>Game of Thrones is one of the best board games I have ever played. I think it
+                                           really captures the essence, and the spirit of the novels. Although for more
+                                           advanced players game might seem unbalanced, because some players start at a
+                                           disadvantage, there are lots of tutorials online that expand the game and can
+                                           really spice it up. </p>
                                        <p>
                                            Pros:
                                            <ul>
-                                               <li>Very elaborate</li>
-                                               <li>Many great scenarios to play</li>
+                                               <li>Addictive</li>
+                                               <li>World famous</li>
+                                               <li>Wide gameplay, both strategic and psychological warfare</li>
                                            </ul>
                                            Cons:
                                            <ul>
                                                <li>Long gameplay</li>
-                                               <li>Long to setup</li>
                                            </ul>
                                        </p>
                                    </div>)}
