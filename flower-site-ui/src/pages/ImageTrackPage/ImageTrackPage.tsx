@@ -50,16 +50,16 @@ function ImageTrackPage() {
     return (
         <div>
             <div id={"image-track"}>
-                <img className={"image"} src={require("../../images/photo-1.webp")} draggable={false}/>
-                <img className={"image"} src={require("../../images/photo-2.webp")} draggable={false}/>
-                <img className={"image"} src={require("../../images/photo-3.webp")} draggable={false}/>
-                <img className={"image"} src={require("../../images/photo-4.webp")} draggable={false}/>
-                <img className={"image"} src={require("../../images/photo-5.webp")} draggable={false}/>
-                <img className={"image"} src={require("../../images/photo-6.webp")} draggable={false}/>
-                <img className={"image"} src={require("../../images/photo-7.webp")} draggable={false}/>
-                <img className={"image"} src={require("../../images/photo-8.webp")} draggable={false}/>
-                <img className={"image"} src={require("../../images/photo-9.webp")} draggable={false}/>
-                <img className={"image"} src={require("../../images/photo-10.webp")} draggable={false}/>
+                <img className={"image"} src={require("../../images/photo-1.jpg")} draggable={false}/>
+                <img className={"image"} src={require("../../images/photo-2.jpg")} draggable={false}/>
+                <img className={"image"} src={require("../../images/photo-3.jpg")} draggable={false}/>
+                <img className={"image"} src={require("../../images/photo-4.jpg")} draggable={false}/>
+                <img className={"image"} src={require("../../images/photo-5.jpg")} draggable={false}/>
+                <img className={"image"} src={require("../../images/photo-6.jpg")} draggable={false}/>
+                <img className={"image"} src={require("../../images/photo-7.jpg")} draggable={false}/>
+                <img className={"image"} src={require("../../images/photo-8.jpg")} draggable={false}/>
+                <img className={"image"} src={require("../../images/photo-9.jpg")} draggable={false}/>
+                <img className={"image"} src={require("../../images/photo-10.jpg")} draggable={false}/>
             </div>
         </div>
     );
