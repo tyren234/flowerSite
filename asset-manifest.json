@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.5c743b2f.css",
-    "main.js": "./static/js/main.1ffffa04.js",
+    "main.css": "./static/css/main.b9d1e1ca.css",
+    "main.js": "./static/js/main.7dcd6fff.js",
     "static/js/787.164b5c59.chunk.js": "./static/js/787.164b5c59.chunk.js",
     "static/media/jakub-rozalski-harvest-advantage-new-small.jpeg": "./static/media/jakub-rozalski-harvest-advantage-new-small.6fcaa344ebc59498430b.jpeg",
     "static/media/photo-1.jpg": "./static/media/photo-1.3234b50bfceb8ab60ecd.jpg",
@@ -29,13 +29,14 @@
     "static/media/7wonders_architects.jpg": "./static/media/7wonders_architects.a0f1ad6a5e7c6201068a.jpg",
     "static/media/munchkin_cards.jpg": "./static/media/munchkin_cards.22c52d171944f1c7fbe9.jpg",
     "static/media/munchkin_game_cover.jpg": "./static/media/munchkin_game_cover.08f211a64caea0276a4e.jpg",
+    "static/media/Flower.png": "./static/media/Flower.ede2140ccddf3c3f87cf.png",
     "index.html": "./index.html",
-    "main.5c743b2f.css.map": "./static/css/main.5c743b2f.css.map",
-    "main.1ffffa04.js.map": "./static/js/main.1ffffa04.js.map",
+    "main.b9d1e1ca.css.map": "./static/css/main.b9d1e1ca.css.map",
+    "main.7dcd6fff.js.map": "./static/js/main.7dcd6fff.js.map",
     "787.164b5c59.chunk.js.map": "./static/js/787.164b5c59.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c743b2f.css",
-    "static/js/main.1ffffa04.js"
+    "static/css/main.b9d1e1ca.css",
+    "static/js/main.7dcd6fff.js"
   ]
 }
