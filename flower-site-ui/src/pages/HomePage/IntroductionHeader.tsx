@@ -1,28 +1,40 @@
 import {useEffect, useState} from "react";
 import "./IntroductionHeader.css"
+
 export interface IntroductionHeaderProps {
     texts: string[];
-    nameChangeInterval: number;
+    letterDelay: number;
+    waitBetweenWords: number;
 }
 
 function IntroductionHeader(props: IntroductionHeaderProps) {
-    const {texts, nameChangeInterval} = props;
-    const [nameIndex, setNameIndex] = useState<number>(0)
+    const {texts, letterDelay, waitBetweenWords} = props;
+    const [currentText, setCurrentText] = useState('');
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [currentTextIndex, setCurrentTextIndex] = useState(0);
+
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            const newIndex = (nameIndex < texts.length) ? nameIndex + 1 : 0;
-            setNameIndex(newIndex);
-        }, nameChangeInterval);
+        if (currentIndex < texts[currentTextIndex].length) {
+            let timeout = setTimeout(() => {
+                setCurrentIndex(prevIndex => prevIndex + 1);
+                setCurrentText(prevText => prevText + texts[currentTextIndex][currentIndex]);
+            }, letterDelay);
+            return () => clearTimeout(timeout);
+        } else {
+            let timeout = setTimeout(() => {
+                setCurrentTextIndex(prevIndex => prevIndex + 1 > texts.length - 1 ? 0 : prevIndex + 1)
+                setCurrentIndex(0);
+                setCurrentText('');
+            }, waitBetweenWords)
+            return () => clearTimeout(timeout);
+        }
 
-        return () => {
-            clearInterval(interval);
-        };
-    }, [nameIndex])
+    }, [currentIndex, letterDelay, texts[currentTextIndex]]);
 
     return (
         <div className={"typewriter"}>
-            <h1>"{texts[nameIndex]}"</h1>
+            <h1>"{currentText}"</h1>
         </div>
     )
 }

@@ -20,8 +20,10 @@ function HomePage() {
                     <section>
                             <p>Hi! I'm Tymon, a.k.a.</p>
                             <p><IntroductionHeader
-                                texts={["🌺 Flower 🌺", "Kwiatek", "Tymon", "GM", "tyren234", "Cwjetok"]}
-                                nameChangeInterval={5000}/></p>
+                                texts={["🌺 Flower 🌺", "Kwiatek", "Tymon Kwiatkowski", "Dungeon Master", "tyren234", "Цветок"]}
+                                letterDelay={150}
+                                waitBetweenWords={2000}
+                                /></p>
                             <p>Be sure to visit
                                 <Link className={styles.underlineLink} to={"/boardGames"}> board games</Link>,
                                 <Link className={styles.underlineLink} to={"/images"}> images</Link> or
