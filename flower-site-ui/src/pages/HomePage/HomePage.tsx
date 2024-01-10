@@ -8,12 +8,20 @@ function HomePage() {
 
     return (
         <div className={"homePage"}>
+            <div id={"welcomeScreenContainer"}>
+                <div id={"welcomeScreen"}>
+                    <h1>Tymon<br />Kwiatkowski</h1>
+                </div>
+                <div id={"foregroundWelcomeImage"}></div>
+            </div>
             <div id="cards">
                 <div className="card left">
                     <div className="card-content">
-                        <section>
+                    <section>
                             <p>Hi! I'm Tymon, a.k.a.</p>
-                            <p><IntroductionHeader texts={["🌺 Flower 🌺", "Kwiatek", "Tymon", "GM", "tyren234", "Cwjetok"]} nameChangeInterval={5000} /></p>
+                            <p><IntroductionHeader
+                                texts={["🌺 Flower 🌺", "Kwiatek", "Tymon", "GM", "tyren234", "Cwjetok"]}
+                                nameChangeInterval={5000}/></p>
                             <p>Be sure to visit
                                 <Link className={styles.underlineLink} to={"/boardGames"}> board games</Link>,
                                 <Link className={styles.underlineLink} to={"/images"}> images</Link> or
