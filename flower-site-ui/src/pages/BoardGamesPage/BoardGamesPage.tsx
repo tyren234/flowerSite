@@ -430,6 +430,151 @@ function BoardGamesPage() {
                                        </p>
                                    </div>)}
                                imagePath={require("../../images/boardGames/got.jpeg")}/>
+
+                <BoardGameCard title={"Terra Mistica 10/10"}
+                               description={(
+                                   <div>
+                                       <p>Great engine building game. Although finishing the engine is quite hard by the
+                                           end of the game, it's the journey that matters. Right? Terra Mistica keeps
+                                           you engaged, you don't even
+                                           have to wait long for your next turn, but that may differ depending on how
+                                           fast your friends play. </p>
+                                       <p>
+                                           Pros:
+                                           <ul>
+                                               <li>Cool mechanic</li>
+                                               <li>Still fun for 2 people</li>
+                                           </ul>
+                                           Cons:
+                                           <ul>
+                                               <li>Long gameplay</li>
+                                           </ul>
+                                       </p>
+                                   </div>)}
+                               imagePath={require("../../images/boardGames/terramistica.png")}/>
+
+                <BoardGameCard title={"Arcs 9/10"}
+                               description={(
+                                   <div>
+                                       <p>Another game from the creators of Root. Although I didn't like this game after
+                                           the first game (I thought it was very slow paced), after the second game I
+                                           changed my mind. Arcs is full of options and even though it's not as
+                                           asymmetrical as Root it's still a lot of fun.</p>
+                                       <p>There is fighting, building, collecting and of course - realising you've been
+                                           playing it wrong for the past several hours. 9/10. Would recommend.</p>
+                                       <p>
+                                           Pros:
+                                           <ul>
+                                               <li>Fights are fast</li>
+                                               <li>Asymmetry</li>
+                                               <li>Expansion with adventures</li>
+                                               <li>Small box</li>
+                                           </ul>
+                                           Cons:
+                                           <ul>
+                                               <li>You often have to wait long between turns</li>
+                                           </ul>
+                                       </p>
+                                   </div>)}
+                               imagePath={require("../../images/boardGames/arcs2.png")}/>
+
+                <BoardGameCard title={"Galaxy Trucker 8/10"}
+                               description={(
+                                   <div>
+                                       <p>Extreamly fun, easy to learn and quick game. Especially good for 2-3 people
+                                           when you haven't got much time. Also be sure to read all the flavor texts as
+                                           they add so much value! You build your spaceship from crap and then sell it
+                                           to someone else at the end of the galaxy. But be wary! You may day on your
+                                           way there. Good stuff.</p>
+                                       <p>
+                                           Pros:
+                                           <ul>
+                                               <li>Quick gameplay</li>
+                                               <li>Replayable</li>
+                                           </ul>
+                                           Cons:
+                                           <ul>
+                                               <li>Repeatable</li>
+                                           </ul>
+                                       </p>
+                                   </div>)}
+                               imagePath={require("../../images/boardGames/truckers.jpg")}/>
+
+                <BoardGameCard title={"Flamme Rouge 7/10"}
+                               description={(
+                                   <div>
+                                       <p>Cycling has never been this much fun! This game is partially luck based, but
+                                           being able to play in like 30 mins and save your high scores in dedicated
+                                           phone app is a big plus. Not that being luck based isn't ;)</p>
+                                       <p>Draw a couple of cards and choose one - you go that many fields forward. It's
+                                           like classic "roll the die and move", but you can roll 6 only a couple of
+                                           times, because after each draw you put selected card away. Additionally as
+                                           you play you will get tired which will add some low value (2) cards to your
+                                           deck, essentially making it harder to draw good cards. Good luck on the
+                                           way!</p>
+                                       <p>
+                                           Pros:
+                                           <ul>
+                                               <li>Quick</li>
+                                               <li>Dedicated app</li>
+                                               <li>Great visuals</li>
+                                               <li>Small box</li>
+                                           </ul>
+                                           Cons:
+                                           <ul>
+                                               <li>Dedicated app</li>
+                                           </ul>
+                                       </p>
+                                   </div>)}
+                               imagePath={require("../../images/boardGames/flammerouge.png")}/>
+
+                <BoardGameCard title={"Rising Sun 9/10"}
+                               description={(
+                                   <div>
+                                       <p>Phenomenal game! With couple of expansions you will conquer Japan and your
+                                           enemies, by siding with different players to focus one poor soul who's just
+                                           trying not to be last (yes that's me).</p>
+                                       <p>This game is interesting in a way, because you usually do not win by just
+                                           conquering Japan (as is the intuitive option). You actually win by constantly
+                                           gaining small amounts of victory points throughout the game. The one who
+                                           commits seppuku last - wins.</p>
+                                       <p>
+                                           Pros:
+                                           <ul>
+                                               <li>Famous</li>
+                                               <li>Asymmetric, so replayability</li>
+                                               <li>Alliance, treason and stuff</li>
+                                           </ul>
+                                           Cons:
+                                           <ul>
+                                               <li>Long gameplay</li>
+                                               <li>Many figurines, big box</li>
+                                           </ul>
+                                       </p>
+                                   </div>)}
+                               imagePath={require("../../images/boardGames/risingSun.jpg")}/>
+
+                <BoardGameCard title={"Ankh: Gods of Egypt 9/10"}
+                               description={(
+                                   <div>
+                                       <p>Great game, in many ways similar to Rising Sun. It has a very interesting
+                                           mechanic of joining two players and merging them into one at the end of the
+                                           game. It let's two players with the lowerst score try to catch up one last
+                                           time. And in my opinion it's very well balanced.</p>
+                                       <p>
+                                           Pros:
+                                           <ul>
+                                               <li>Addictive</li>
+                                               <li>Cool mechanic</li>
+                                           </ul>
+                                           Cons:
+                                           <ul>
+                                               <li>Long gameplay</li>
+                                               <li>Big box</li>
+                                           </ul>
+                                       </p>
+                                   </div>)}
+                               imagePath={require("../../images/boardGames/ankh2.png")}/>
             </div>
         </div>
     );
