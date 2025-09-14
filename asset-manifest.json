@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.b9d1e1ca.css",
-    "main.js": "./static/js/main.279b834c.js",
+    "main.js": "./static/js/main.4cf25711.js",
     "static/js/787.164b5c59.chunk.js": "./static/js/787.164b5c59.chunk.js",
     "static/media/ankh2.png": "./static/media/ankh2.fe203d5e63ff1bc950eb.png",
     "static/media/jakub-rozalski-harvest-advantage-new-small.jpeg": "./static/media/jakub-rozalski-harvest-advantage-new-small.6fcaa344ebc59498430b.jpeg",
@@ -38,11 +38,11 @@
     "static/media/Flower.png": "./static/media/Flower.ede2140ccddf3c3f87cf.png",
     "index.html": "./index.html",
     "main.b9d1e1ca.css.map": "./static/css/main.b9d1e1ca.css.map",
-    "main.279b834c.js.map": "./static/js/main.279b834c.js.map",
+    "main.4cf25711.js.map": "./static/js/main.4cf25711.js.map",
     "787.164b5c59.chunk.js.map": "./static/js/787.164b5c59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9d1e1ca.css",
-    "static/js/main.279b834c.js"
+    "static/js/main.4cf25711.js"
   ]
 }
