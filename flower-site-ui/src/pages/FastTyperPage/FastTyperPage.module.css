@@ -2,25 +2,33 @@
     height: 100%;
     width: 100%;
     color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .mainInputArea {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 40rem;
-    height: 75vh;
+    width: clamp(250px, 90vw, 40rem);
+    height: clamp(50vh, 75vh, 90vh);
     background-color: #202124;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(0.5rem, 2vw, 1rem);
 }
 
 .mainInput {
-    height: 2rem;
+    height: clamp(2rem, 5vh, 3rem);
     width: 100%;
     position: absolute;
     bottom: 0;
 
     color: azure;
-    font-size: larger;
+    font-size: clamp(14px, 2.5vw, 18px);
     text-align: center;
 
     caret-color: transparent;
@@ -29,8 +37,36 @@
     outline: none;
     resize: none;
     overflow: auto;
+    padding: clamp(0.5rem, 1vw, 1rem);
+    box-sizing: border-box;
 }
 
 .currentWordHeader {
     text-align: center;
+    font-size: clamp(14px, 2.5vw, 18px);
+    padding: clamp(0.5rem, 1.5vw, 1rem);
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Mobile optimizations */
+@media (max-width: 480px) {
+    .fastTyperPage {
+        padding: 0.5rem;
+    }
+
+    .mainInputArea {
+        height: clamp(40vh, 60vh, 70vh);
+        width: calc(100vw - 1rem);
+    }
+
+    .mainInput {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainInputArea {
+        width: calc(100vw - 2rem);
+    }
 }

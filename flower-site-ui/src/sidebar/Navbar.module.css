@@ -1,9 +1,22 @@
 .navBar {
-    padding: 1rem;
+    padding: clamp(0.75rem, 2vw, 1rem);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-
     z-index: 99;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Ensure button is touch-friendly on mobile */
+@media (max-width: 480px) {
+    .navBar {
+        padding: 0.75rem;
+    }
+}
+
+.navBar button {
+    min-width: 44px;
+    min-height: 44px;
 }

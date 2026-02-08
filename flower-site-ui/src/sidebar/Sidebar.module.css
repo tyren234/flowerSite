@@ -3,20 +3,36 @@
     left: 0;
     top: 0;
     bottom: 0;
-    width: 25vh;
+    width: clamp(200px, 25vh, 300px);
     z-index: 100;
 
-    padding: 2rem;
+    padding: clamp(1rem, 2rem, 2.5rem);
     background-color: #17171A;
-    border-bottom-right-radius: 10vh;
-    border-top-right-radius: 10vh;
+    border-bottom-right-radius: clamp(2rem, 10vh, 3rem);
+    border-top-right-radius: clamp(2rem, 10vh, 3rem);
 
     transform: translateX(-100%);
     transition: 0.15s ease transform;
+    overflow-y: auto;
 }
 
 .aside.visible {
     transform: translateX(0);
+}
+
+/* Mobile optimizations */
+@media (max-width: 480px) {
+    .aside {
+        width: 70vw;
+        max-width: 280px;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .aside {
+        width: 60vw;
+    }
 }
 
 .icon {

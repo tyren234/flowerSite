@@ -4,7 +4,21 @@
 }
 
 .Page {
-  padding: 5vh 5vw;
+  padding: clamp(1rem, 5vw, 2rem) clamp(1rem, 5vw, 2rem);
+  min-height: 100vh;
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 480px) {
+  .Page {
+    padding: 1rem 0.75rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .Page {
+    padding: 1.5rem 1rem;
+  }
 }
 
 .App-logo {
